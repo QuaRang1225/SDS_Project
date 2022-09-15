@@ -3,6 +3,6 @@
 ### iOS
 ### Android
 ### Backend
-### ER_Diagram
+### 디자인 설계
 
 
