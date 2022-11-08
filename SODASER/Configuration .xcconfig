@@ -1,0 +1,11 @@
+//
+//  Configuration .xcconfig
+//  SODASER
+//
+//  Created by 유영웅 on 2022/10/19.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+KAKAO_NATIVE_APP_KEY = 16cba919a24b9e555e196a3d469383e8

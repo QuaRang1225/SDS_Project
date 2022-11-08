@@ -1,0 +1,889 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81016BCC28FD4F3100F367B3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81016BCB28FD4F3100F367B3 /* MainView.swift */; };
+		81016BCE28FD55AD00F367B3 /* ColorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81016BCD28FD55AD00F367B3 /* ColorSet.swift */; };
+		81016BD428FD570C00F367B3 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81016BD328FD570C00F367B3 /* SearchBarView.swift */; };
+		81016BD628FD5BED00F367B3 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81016BD528FD5BED00F367B3 /* UIApplication.swift */; };
+		813477642903A591005830EC /* PostingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813477632903A591005830EC /* PostingModel.swift */; };
+		8134776A29040EC7005830EC /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8134776929040EC7005830EC /* UserDataModel.swift */; };
+		8134777029041745005830EC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8134776F29041745005830EC /* LoginView.swift */; };
+		813547842900665700BF4AD2 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813547832900665700BF4AD2 /* MenuView.swift */; };
+		81354786290099DA00BF4AD2 /* PhotoAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81354785290099DA00BF4AD2 /* PhotoAccessView.swift */; };
+		81423EC328FD7F290071F430 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81423EC228FD7F290071F430 /* MainViewModel.swift */; };
+		81423EC728FE39730071F430 /* SelectionBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81423EC628FE39730071F430 /* SelectionBarView.swift */; };
+		81423ECE28FF92B50071F430 /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 81423ECD28FF92B50071F430 /* KakaoSDK */; };
+		81423ED028FF92B50071F430 /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 81423ECF28FF92B50071F430 /* KakaoSDKAuth */; };
+		81423ED228FF92B50071F430 /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 81423ED128FF92B50071F430 /* KakaoSDKCommon */; };
+		81423ED428FF92B50071F430 /* KakaoSDKCommonCore in Frameworks */ = {isa = PBXBuildFile; productRef = 81423ED328FF92B50071F430 /* KakaoSDKCommonCore */; };
+		81423ED628FF92B50071F430 /* KakaoSDKNavi in Frameworks */ = {isa = PBXBuildFile; productRef = 81423ED528FF92B50071F430 /* KakaoSDKNavi */; };
+		81423ED828FF92B50071F430 /* KakaoSDKShare in Frameworks */ = {isa = PBXBuildFile; productRef = 81423ED728FF92B50071F430 /* KakaoSDKShare */; };
+		81423EDA28FF92B50071F430 /* KakaoSDKStory in Frameworks */ = {isa = PBXBuildFile; productRef = 81423ED928FF92B50071F430 /* KakaoSDKStory */; };
+		81423EDC28FF92B50071F430 /* KakaoSDKTalk in Frameworks */ = {isa = PBXBuildFile; productRef = 81423EDB28FF92B50071F430 /* KakaoSDKTalk */; };
+		81423EDE28FF92B50071F430 /* KakaoSDKTemplate in Frameworks */ = {isa = PBXBuildFile; productRef = 81423EDD28FF92B50071F430 /* KakaoSDKTemplate */; };
+		81423EE028FF92B50071F430 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 81423EDF28FF92B50071F430 /* KakaoSDKUser */; };
+		81423EE228FFB2D60071F430 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81423EE128FFB2D60071F430 /* AppDelegate.swift */; };
+		81423EE428FFBB560071F430 /* KakaoAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81423EE328FFBB560071F430 /* KakaoAuthViewModel.swift */; };
+		815E3591290793C400D07006 /* PreViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815E3590290793C400D07006 /* PreViewProvider.swift */; };
+		815E35C92907E0CC00D07006 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815E35C82907E0CC00D07006 /* LoginViewModel.swift */; };
+		816ABD3A290FAAD100251196 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816ABD39290FAAD100251196 /* ApiClient.swift */; };
+		816ABD42290FAD5400251196 /* ApiLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816ABD41290FAD5400251196 /* ApiLogger.swift */; };
+		816ABD44290FB05900251196 /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816ABD43290FB05900251196 /* AuthRouter.swift */; };
+		816ABD46290FBB4E00251196 /* BaseIntercept.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816ABD45290FBB4E00251196 /* BaseIntercept.swift */; };
+		816ABD49290FC0F900251196 /* AuthApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816ABD48290FC0F900251196 /* AuthApiService.swift */; };
+		816ABD4D290FC3BF00251196 /* KakaoTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816ABD4C290FC3BF00251196 /* KakaoTokenModel.swift */; };
+		816ABD4F290FC4C500251196 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816ABD4E290FC4C500251196 /* AuthResponse.swift */; };
+		8176F44828E727DF00E0239F /* SODASERApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176F44728E727DF00E0239F /* SODASERApp.swift */; };
+		8176F44C28E727E000E0239F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8176F44B28E727E000E0239F /* Assets.xcassets */; };
+		8176F44F28E727E000E0239F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8176F44E28E727E000E0239F /* Preview Assets.xcassets */; };
+		8176F45928E727E100E0239F /* SODASERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176F45828E727E100E0239F /* SODASERTests.swift */; };
+		8176F46328E727E100E0239F /* SODASERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176F46228E727E100E0239F /* SODASERUITests.swift */; };
+		8176F46528E727E100E0239F /* SODASERUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176F46428E727E100E0239F /* SODASERUITestsLaunchTests.swift */; };
+		8176F47228E9995800E0239F /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8176F47128E9995800E0239F /* StartView.swift */; };
+		819F3F1329027B6F00ED3070 /* PostingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819F3F1229027B6E00ED3070 /* PostingViewModel.swift */; };
+		81B075E72902ACAC00768A83 /* TabImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B075E62902ACAC00768A83 /* TabImageView.swift */; };
+		81D72ED32911494D009F6132 /* MagnificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D72ED22911494D009F6132 /* MagnificationView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8176F45528E727E100E0239F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8176F43C28E727DF00E0239F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8176F44328E727DF00E0239F;
+			remoteInfo = SODASER;
+		};
+		8176F45F28E727E100E0239F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8176F43C28E727DF00E0239F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8176F44328E727DF00E0239F;
+			remoteInfo = SODASER;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		81016BCB28FD4F3100F367B3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		81016BCD28FD55AD00F367B3 /* ColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSet.swift; sourceTree = "<group>"; };
+		81016BD328FD570C00F367B3 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		81016BD528FD5BED00F367B3 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		813477632903A591005830EC /* PostingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingModel.swift; sourceTree = "<group>"; };
+		8134776929040EC7005830EC /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
+		8134776F29041745005830EC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		813547832900665700BF4AD2 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		81354785290099DA00BF4AD2 /* PhotoAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAccessView.swift; sourceTree = "<group>"; };
+		81423EC228FD7F290071F430 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		81423EC628FE39730071F430 /* SelectionBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionBarView.swift; sourceTree = "<group>"; };
+		81423ECA28FF84B30071F430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		81423ECB28FF8B6F0071F430 /* Configuration .xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Configuration .xcconfig"; sourceTree = "<group>"; };
+		81423EE128FFB2D60071F430 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		81423EE328FFBB560071F430 /* KakaoAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAuthViewModel.swift; sourceTree = "<group>"; };
+		815E3590290793C400D07006 /* PreViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreViewProvider.swift; sourceTree = "<group>"; };
+		815E35C82907E0CC00D07006 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		816ABD39290FAAD100251196 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		816ABD41290FAD5400251196 /* ApiLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLogger.swift; sourceTree = "<group>"; };
+		816ABD43290FB05900251196 /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		816ABD45290FBB4E00251196 /* BaseIntercept.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseIntercept.swift; sourceTree = "<group>"; };
+		816ABD48290FC0F900251196 /* AuthApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApiService.swift; sourceTree = "<group>"; };
+		816ABD4C290FC3BF00251196 /* KakaoTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoTokenModel.swift; sourceTree = "<group>"; };
+		816ABD4E290FC4C500251196 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		8176F44428E727DF00E0239F /* SODASER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SODASER.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8176F44728E727DF00E0239F /* SODASERApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SODASERApp.swift; sourceTree = "<group>"; };
+		8176F44B28E727E000E0239F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8176F44E28E727E000E0239F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8176F45428E727E100E0239F /* SODASERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SODASERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8176F45828E727E100E0239F /* SODASERTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SODASERTests.swift; sourceTree = "<group>"; };
+		8176F45E28E727E100E0239F /* SODASERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SODASERUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8176F46228E727E100E0239F /* SODASERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SODASERUITests.swift; sourceTree = "<group>"; };
+		8176F46428E727E100E0239F /* SODASERUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SODASERUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8176F47128E9995800E0239F /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		819F3F1229027B6E00ED3070 /* PostingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostingViewModel.swift; sourceTree = "<group>"; };
+		81B075E62902ACAC00768A83 /* TabImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabImageView.swift; sourceTree = "<group>"; };
+		81D72ED22911494D009F6132 /* MagnificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnificationView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8176F44128E727DF00E0239F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81423ECE28FF92B50071F430 /* KakaoSDK in Frameworks */,
+				81423EDC28FF92B50071F430 /* KakaoSDKTalk in Frameworks */,
+				81423ED428FF92B50071F430 /* KakaoSDKCommonCore in Frameworks */,
+				81423ED628FF92B50071F430 /* KakaoSDKNavi in Frameworks */,
+				81423EDA28FF92B50071F430 /* KakaoSDKStory in Frameworks */,
+				81423EDE28FF92B50071F430 /* KakaoSDKTemplate in Frameworks */,
+				81423ED228FF92B50071F430 /* KakaoSDKCommon in Frameworks */,
+				81423ED028FF92B50071F430 /* KakaoSDKAuth in Frameworks */,
+				81423EE028FF92B50071F430 /* KakaoSDKUser in Frameworks */,
+				81423ED828FF92B50071F430 /* KakaoSDKShare in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8176F45128E727E100E0239F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8176F45B28E727E100E0239F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81016BCF28FD568C00F367B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81B075E52902AC0C00768A83 /* Main */,
+				81B075E42902ABC400768A83 /* Posting */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		81016BD028FD569900F367B3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				819F3F1229027B6E00ED3070 /* PostingViewModel.swift */,
+				81423EC228FD7F290071F430 /* MainViewModel.swift */,
+				81423EE328FFBB560071F430 /* KakaoAuthViewModel.swift */,
+				815E35C82907E0CC00D07006 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		81016BD128FD56A100F367B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				813477632903A591005830EC /* PostingModel.swift */,
+				8134776929040EC7005830EC /* UserDataModel.swift */,
+				816ABD4C290FC3BF00251196 /* KakaoTokenModel.swift */,
+				816ABD4E290FC4C500251196 /* AuthResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81016BD228FD56B900F367B3 /* DataSet */ = {
+			isa = PBXGroup;
+			children = (
+				81016BCD28FD55AD00F367B3 /* ColorSet.swift */,
+				81016BD528FD5BED00F367B3 /* UIApplication.swift */,
+				81423EE128FFB2D60071F430 /* AppDelegate.swift */,
+				815E3590290793C400D07006 /* PreViewProvider.swift */,
+			);
+			path = DataSet;
+			sourceTree = "<group>";
+		};
+		816ABD36290FA9E500251196 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				816ABD47290FC0E500251196 /* Service */,
+				816ABD39290FAAD100251196 /* ApiClient.swift */,
+				816ABD41290FAD5400251196 /* ApiLogger.swift */,
+				816ABD38290FAABC00251196 /* Router */,
+				816ABD37290FAAAB00251196 /* Intercepter */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		816ABD37290FAAAB00251196 /* Intercepter */ = {
+			isa = PBXGroup;
+			children = (
+				816ABD45290FBB4E00251196 /* BaseIntercept.swift */,
+			);
+			path = Intercepter;
+			sourceTree = "<group>";
+		};
+		816ABD38290FAABC00251196 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				816ABD43290FB05900251196 /* AuthRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		816ABD47290FC0E500251196 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				816ABD48290FC0F900251196 /* AuthApiService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8176F43B28E727DF00E0239F = {
+			isa = PBXGroup;
+			children = (
+				8176F44628E727DF00E0239F /* SODASER */,
+				8176F45728E727E100E0239F /* SODASERTests */,
+				8176F46128E727E100E0239F /* SODASERUITests */,
+				8176F44528E727DF00E0239F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8176F44528E727DF00E0239F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8176F44428E727DF00E0239F /* SODASER.app */,
+				8176F45428E727E100E0239F /* SODASERTests.xctest */,
+				8176F45E28E727E100E0239F /* SODASERUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8176F44628E727DF00E0239F /* SODASER */ = {
+			isa = PBXGroup;
+			children = (
+				81423ECA28FF84B30071F430 /* Info.plist */,
+				8176F44728E727DF00E0239F /* SODASERApp.swift */,
+				816ABD36290FA9E500251196 /* API */,
+				81016BD228FD56B900F367B3 /* DataSet */,
+				81016BD128FD56A100F367B3 /* Model */,
+				81016BD028FD569900F367B3 /* ViewModel */,
+				81016BCF28FD568C00F367B3 /* View */,
+				8176F44B28E727E000E0239F /* Assets.xcassets */,
+				8176F44D28E727E000E0239F /* Preview Content */,
+				81423ECB28FF8B6F0071F430 /* Configuration .xcconfig */,
+			);
+			path = SODASER;
+			sourceTree = "<group>";
+		};
+		8176F44D28E727E000E0239F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8176F44E28E727E000E0239F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8176F45728E727E100E0239F /* SODASERTests */ = {
+			isa = PBXGroup;
+			children = (
+				8176F45828E727E100E0239F /* SODASERTests.swift */,
+			);
+			path = SODASERTests;
+			sourceTree = "<group>";
+		};
+		8176F46128E727E100E0239F /* SODASERUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8176F46228E727E100E0239F /* SODASERUITests.swift */,
+				8176F46428E727E100E0239F /* SODASERUITestsLaunchTests.swift */,
+			);
+			path = SODASERUITests;
+			sourceTree = "<group>";
+		};
+		81B075E42902ABC400768A83 /* Posting */ = {
+			isa = PBXGroup;
+			children = (
+				81354785290099DA00BF4AD2 /* PhotoAccessView.swift */,
+				81B075E62902ACAC00768A83 /* TabImageView.swift */,
+				81D72ED22911494D009F6132 /* MagnificationView.swift */,
+			);
+			path = Posting;
+			sourceTree = "<group>";
+		};
+		81B075E52902AC0C00768A83 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				81016BCB28FD4F3100F367B3 /* MainView.swift */,
+				8176F47128E9995800E0239F /* StartView.swift */,
+				81016BD328FD570C00F367B3 /* SearchBarView.swift */,
+				81423EC628FE39730071F430 /* SelectionBarView.swift */,
+				813547832900665700BF4AD2 /* MenuView.swift */,
+				8134776F29041745005830EC /* LoginView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8176F44328E727DF00E0239F /* SODASER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8176F46828E727E100E0239F /* Build configuration list for PBXNativeTarget "SODASER" */;
+			buildPhases = (
+				8176F44028E727DF00E0239F /* Sources */,
+				8176F44128E727DF00E0239F /* Frameworks */,
+				8176F44228E727DF00E0239F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SODASER;
+			packageProductDependencies = (
+				81423ECD28FF92B50071F430 /* KakaoSDK */,
+				81423ECF28FF92B50071F430 /* KakaoSDKAuth */,
+				81423ED128FF92B50071F430 /* KakaoSDKCommon */,
+				81423ED328FF92B50071F430 /* KakaoSDKCommonCore */,
+				81423ED528FF92B50071F430 /* KakaoSDKNavi */,
+				81423ED728FF92B50071F430 /* KakaoSDKShare */,
+				81423ED928FF92B50071F430 /* KakaoSDKStory */,
+				81423EDB28FF92B50071F430 /* KakaoSDKTalk */,
+				81423EDD28FF92B50071F430 /* KakaoSDKTemplate */,
+				81423EDF28FF92B50071F430 /* KakaoSDKUser */,
+			);
+			productName = SODASER;
+			productReference = 8176F44428E727DF00E0239F /* SODASER.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8176F45328E727E100E0239F /* SODASERTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8176F46B28E727E100E0239F /* Build configuration list for PBXNativeTarget "SODASERTests" */;
+			buildPhases = (
+				8176F45028E727E100E0239F /* Sources */,
+				8176F45128E727E100E0239F /* Frameworks */,
+				8176F45228E727E100E0239F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8176F45628E727E100E0239F /* PBXTargetDependency */,
+			);
+			name = SODASERTests;
+			productName = SODASERTests;
+			productReference = 8176F45428E727E100E0239F /* SODASERTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8176F45D28E727E100E0239F /* SODASERUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8176F46E28E727E100E0239F /* Build configuration list for PBXNativeTarget "SODASERUITests" */;
+			buildPhases = (
+				8176F45A28E727E100E0239F /* Sources */,
+				8176F45B28E727E100E0239F /* Frameworks */,
+				8176F45C28E727E100E0239F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8176F46028E727E100E0239F /* PBXTargetDependency */,
+			);
+			name = SODASERUITests;
+			productName = SODASERUITests;
+			productReference = 8176F45E28E727E100E0239F /* SODASERUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8176F43C28E727DF00E0239F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					8176F44328E727DF00E0239F = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					8176F45328E727E100E0239F = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 8176F44328E727DF00E0239F;
+					};
+					8176F45D28E727E100E0239F = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 8176F44328E727DF00E0239F;
+					};
+				};
+			};
+			buildConfigurationList = 8176F43F28E727DF00E0239F /* Build configuration list for PBXProject "SODASER" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8176F43B28E727DF00E0239F;
+			packageReferences = (
+				81423ECC28FF92B50071F430 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
+			);
+			productRefGroup = 8176F44528E727DF00E0239F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8176F44328E727DF00E0239F /* SODASER */,
+				8176F45328E727E100E0239F /* SODASERTests */,
+				8176F45D28E727E100E0239F /* SODASERUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8176F44228E727DF00E0239F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8176F44F28E727E000E0239F /* Preview Assets.xcassets in Resources */,
+				8176F44C28E727E000E0239F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8176F45228E727E100E0239F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8176F45C28E727E100E0239F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8176F44028E727DF00E0239F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				816ABD4F290FC4C500251196 /* AuthResponse.swift in Sources */,
+				81423EE428FFBB560071F430 /* KakaoAuthViewModel.swift in Sources */,
+				81423EC328FD7F290071F430 /* MainViewModel.swift in Sources */,
+				81B075E72902ACAC00768A83 /* TabImageView.swift in Sources */,
+				81016BD628FD5BED00F367B3 /* UIApplication.swift in Sources */,
+				81354786290099DA00BF4AD2 /* PhotoAccessView.swift in Sources */,
+				81016BD428FD570C00F367B3 /* SearchBarView.swift in Sources */,
+				81423EE228FFB2D60071F430 /* AppDelegate.swift in Sources */,
+				815E3591290793C400D07006 /* PreViewProvider.swift in Sources */,
+				819F3F1329027B6F00ED3070 /* PostingViewModel.swift in Sources */,
+				81016BCE28FD55AD00F367B3 /* ColorSet.swift in Sources */,
+				8176F47228E9995800E0239F /* StartView.swift in Sources */,
+				8134777029041745005830EC /* LoginView.swift in Sources */,
+				813477642903A591005830EC /* PostingModel.swift in Sources */,
+				813547842900665700BF4AD2 /* MenuView.swift in Sources */,
+				81016BCC28FD4F3100F367B3 /* MainView.swift in Sources */,
+				8176F44828E727DF00E0239F /* SODASERApp.swift in Sources */,
+				81423EC728FE39730071F430 /* SelectionBarView.swift in Sources */,
+				816ABD44290FB05900251196 /* AuthRouter.swift in Sources */,
+				815E35C92907E0CC00D07006 /* LoginViewModel.swift in Sources */,
+				8134776A29040EC7005830EC /* UserDataModel.swift in Sources */,
+				816ABD49290FC0F900251196 /* AuthApiService.swift in Sources */,
+				81D72ED32911494D009F6132 /* MagnificationView.swift in Sources */,
+				816ABD42290FAD5400251196 /* ApiLogger.swift in Sources */,
+				816ABD4D290FC3BF00251196 /* KakaoTokenModel.swift in Sources */,
+				816ABD3A290FAAD100251196 /* ApiClient.swift in Sources */,
+				816ABD46290FBB4E00251196 /* BaseIntercept.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8176F45028E727E100E0239F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8176F45928E727E100E0239F /* SODASERTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8176F45A28E727E100E0239F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8176F46528E727E100E0239F /* SODASERUITestsLaunchTests.swift in Sources */,
+				8176F46328E727E100E0239F /* SODASERUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8176F45628E727E100E0239F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8176F44328E727DF00E0239F /* SODASER */;
+			targetProxy = 8176F45528E727E100E0239F /* PBXContainerItemProxy */;
+		};
+		8176F46028E727E100E0239F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8176F44328E727DF00E0239F /* SODASER */;
+			targetProxy = 8176F45F28E727E100E0239F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8176F46628E727E100E0239F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81423ECB28FF8B6F0071F430 /* Configuration .xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8176F46728E727E100E0239F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81423ECB28FF8B6F0071F430 /* Configuration .xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8176F46928E727E100E0239F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81423ECB28FF8B6F0071F430 /* Configuration .xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SODASER/Preview Content\"";
+				DEVELOPMENT_TEAM = N676ZFA7W8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SODASER/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "소다서";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = quarang.SODASER;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8176F46A28E727E100E0239F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81423ECB28FF8B6F0071F430 /* Configuration .xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SODASER/Preview Content\"";
+				DEVELOPMENT_TEAM = N676ZFA7W8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SODASER/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "소다서";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = quarang.SODASER;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8176F46C28E727E100E0239F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81423ECB28FF8B6F0071F430 /* Configuration .xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N676ZFA7W8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = quarang.SODASERTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SODASER.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SODASER";
+			};
+			name = Debug;
+		};
+		8176F46D28E727E100E0239F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81423ECB28FF8B6F0071F430 /* Configuration .xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N676ZFA7W8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = quarang.SODASERTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SODASER.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SODASER";
+			};
+			name = Release;
+		};
+		8176F46F28E727E100E0239F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81423ECB28FF8B6F0071F430 /* Configuration .xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N676ZFA7W8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = quarang.SODASERUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SODASER;
+			};
+			name = Debug;
+		};
+		8176F47028E727E100E0239F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81423ECB28FF8B6F0071F430 /* Configuration .xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N676ZFA7W8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = quarang.SODASERUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SODASER;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8176F43F28E727DF00E0239F /* Build configuration list for PBXProject "SODASER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8176F46628E727E100E0239F /* Debug */,
+				8176F46728E727E100E0239F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8176F46828E727E100E0239F /* Build configuration list for PBXNativeTarget "SODASER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8176F46928E727E100E0239F /* Debug */,
+				8176F46A28E727E100E0239F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8176F46B28E727E100E0239F /* Build configuration list for PBXNativeTarget "SODASERTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8176F46C28E727E100E0239F /* Debug */,
+				8176F46D28E727E100E0239F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8176F46E28E727E100E0239F /* Build configuration list for PBXNativeTarget "SODASERUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8176F46F28E727E100E0239F /* Debug */,
+				8176F47028E727E100E0239F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		81423ECC28FF92B50071F430 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		81423ECD28FF92B50071F430 /* KakaoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81423ECC28FF92B50071F430 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDK;
+		};
+		81423ECF28FF92B50071F430 /* KakaoSDKAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81423ECC28FF92B50071F430 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKAuth;
+		};
+		81423ED128FF92B50071F430 /* KakaoSDKCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81423ECC28FF92B50071F430 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCommon;
+		};
+		81423ED328FF92B50071F430 /* KakaoSDKCommonCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81423ECC28FF92B50071F430 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCommonCore;
+		};
+		81423ED528FF92B50071F430 /* KakaoSDKNavi */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81423ECC28FF92B50071F430 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKNavi;
+		};
+		81423ED728FF92B50071F430 /* KakaoSDKShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81423ECC28FF92B50071F430 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKShare;
+		};
+		81423ED928FF92B50071F430 /* KakaoSDKStory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81423ECC28FF92B50071F430 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKStory;
+		};
+		81423EDB28FF92B50071F430 /* KakaoSDKTalk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81423ECC28FF92B50071F430 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKTalk;
+		};
+		81423EDD28FF92B50071F430 /* KakaoSDKTemplate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81423ECC28FF92B50071F430 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKTemplate;
+		};
+		81423EDF28FF92B50071F430 /* KakaoSDKUser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 81423ECC28FF92B50071F430 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKUser;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8176F43C28E727DF00E0239F /* Project object */;
+}
